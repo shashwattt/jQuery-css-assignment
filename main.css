@@ -8,10 +8,12 @@
 body {
     margin: 0;
     font-family: sans-serif;
+    background-color: #F4FAFF;
+    overflow-y: scroll;
 }
 
 header {
-    background-color: #402FAB;
+    background-color: #463D90;
     text-align: center;
     min-height:8vh;
     max-height:8vh;
@@ -55,7 +57,7 @@ header {
 
 .menu-main:hover{
    background-color: white;
-   color: #402FAB;
+   color: #463D90;
 }
 
 .drop-down{
@@ -69,6 +71,7 @@ header {
     -webkit-transition: height .5s cubic-bezier(0.68, -0.75, 0.265, 1.75);
     transition: height .5s cubic-bezier(0.68, -0.75, 0.265, 1.75);
     overflow-x: scroll;
+    z-index: 11;
 }
 
 .menu-main:hover .drop-down{
@@ -134,14 +137,6 @@ header {
     display: flex;
 }
 
-/* Create three equal columns that sits next to each other */
-.column {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
-}
 ul{
     padding: 0;
     list-style-type: none;
@@ -153,14 +148,14 @@ ul li{
     color: #939293;
 }
 .column-menu{
-    width: 17vw;
-    min-width: 180px;
+    width: 20vw !important;
+    min-width: 200px;
     padding: 20px 40px;
     height: 300px;   
 }
 
 .column-menu h6{
-    color: #402FAB;
+    color: #463D90;
     margin-bottom: 0px;
 }
 
@@ -204,7 +199,7 @@ ul li{
 
 .popup-content span:nth-child(2){
     padding: 5px 20px;
-    color: #402FAB;
+    color: #463D90;
     font-size: 1.3em;
     font-weight: 700;
 }
@@ -224,6 +219,7 @@ ul li{
 }
 /* Style the footer */
 footer {
+    width: 100%;
     background-color: #f1f1f1;
     padding: 10px;
     text-align: center;
@@ -236,11 +232,39 @@ footer {
     color: white;
     -o-text-overflow: clip;
     text-overflow: clip;
-    background: #402FAB;
+    background: #463D90;
     -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
     box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
   }
 
+  .grid-container {
+    display: grid;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px 6vw;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height: 22vw;
+    position: relative;
+    align-items: center;
+    background-size: contain !important;
+    border: none;
+    box-shadow: 3px 3px rgba(0,0,0,0.2);
+  }
+
+  .poular-item-button{
+    position: absolute;
+    align-self: center;
+    left: 10%;
+    bottom: 20px;
+    width: 80%
+  }
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
     .row {
