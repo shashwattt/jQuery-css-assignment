@@ -48,7 +48,7 @@ $(document).ready(function () {
     });
 
     function showPopupView(data){
-        $('#cat-logo').html(data['0'].image_url);
+        $('#cat-logo').attr({"src":data['0'].image_url});
         $('#cat-header').html(data['0'].name.toUpperCase());
         let text = 'There are ' + data.subCategories.length+' sub-categories and '+data['0'].offer_count+' offers available for '+data['0'].name;
         $('#cat-desc').html(text)

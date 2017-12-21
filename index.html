@@ -1,81 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>UI Demo</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="./main.js"></script>
-<link rel="stylesheet" href="./main.css"></link>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UI Demo</title>
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<script src="./js/main.js"></script>
+	<link rel="stylesheet" href="./css/main.min.css"></link>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
 
 
-<header class="header-grid-container">
-    <div><img src="./img/white-logo.png" width="100px" /></div>
-    <div>
-        <span class="menu-main">Categories <img src="./img/expand-button.svg" width="10px" />
-            <div class="drop-down">      
-                <div id="menu-row" class="row">
-                    
-                </div>
-            </div>
-        </span>
-        <span class="menu-main">All Stores <img src="./img/expand-button.svg" width="10px" /></span>
-    </div>
-    <div></div>  
-    <div><input class="button" placeholder="Search offers for..." /></div>
-    <div>
-        <img src="./img/notification.svg" height="25px"/>
-        <img src="./img/user.svg" height="40px"/>
-        <span>Ujjwal</span>
-    </div>
-</header>
-<div style="padding:0px 6vw">
-    <h2>Polular Stores</h2>
-    <h5>Check out some amazing cashback offers in addition to the discount coupons and sale offers offered by these popular store.</h5>
-</div>
-<div class="grid-container">
-  <div class="grid-item" style="background: url(./img/paytm.jpg)">
-        <input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
-  </div>
-  <div class="grid-item" style="background: url(./img/amazon.jpg)">
-        <input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
-  </div>
-  <div class="grid-item" style="background: url(./img/flipkart.jpg)">
-        <input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
-    </div>  
-  <div class="grid-item" style="background: url(./img/jabong.png)">
-        <input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
-  </div>
-  <div class="grid-item" style="background: url(./img/mobi.jpg)">
-      <input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
-    </div>
-  <div class="grid-item" style="background: url(./img/shopclues.jpg)">
-        <input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
-    </div>  
-  <div class="grid-item" style="background: url(./img/snapdeal.png)">
-      <input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
-</div>
-  <div class="grid-item" style="background: url(./img/vista.jpg)">
-      <input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
-</div>
-</div>
+	<header class="header-grid-container">
+		<div>
+			<img src="./img/white-logo.png" width="100px" />
+		</div>
+		<div>
+			<span class="menu-main">Categories
+				<img src="./img/expand-button.svg" width="10px" />
+				<div class="drop-down">
+					<div id="menu-row" class="row">
 
+					</div>
+				</div>
+			</span>
+			<span class="menu-main">All Stores
+				<img src="./img/expand-button.svg" width="10px" />
+			</span>
+		</div>
+		<div></div>
+		<div>
+			<input class="button" placeholder="Search offers for..." />
+		</div>
+		<div>
+			<img src="./img/notification.svg" height="25px" />
+			<img src="./img/user.svg" height="40px" />
+			<span>Ujjwal</span>
+		</div>
+	</header>
+	<div style="padding:0px 6vw">
+		<h2>Polular Stores</h2>
+		<h5>Check out some amazing cashback offers in addition to the discount coupons and sale offers offered by these popular store.
+		</h5>
+	</div>
+	<div class="grid-container">
+		<div class="grid-item" style="background: url(./img/paytm.jpg)">
+			<input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
+		</div>
+		<div class="grid-item" style="background: url(./img/amazon.jpg)">
+			<input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
+		</div>
+		<div class="grid-item" style="background: url(./img/flipkart.jpg)">
+			<input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
+		</div>
+		<div class="grid-item" style="background: url(./img/jabong.jpg)">
+			<input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
+		</div>
+		<div class="grid-item" style="background: url(./img/mobi.jpg)">
+			<input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
+		</div>
+		<div class="grid-item" style="background: url(./img/shopclues.jpg)">
+			<input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
+		</div>
+		<div class="grid-item" style="background: url(./img/snapdeal.png)">
+			<input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
+		</div>
+		<div class="grid-item" style="background: url(./img/vista.jpg)">
+			<input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
+		</div>
+	</div>
 
-<footer>
-  <p>Footer</p>
-</footer>
+	<div id="slider-wrapper">
+		<div class="inner-wrapper">
+			<input checked type="radio" name="slide" class="control" id="Slide1" />
+			<label for="Slide1" id="s1"></label>
+			<input type="radio" name="slide" class="control" id="Slide2" />
+			<label for="Slide2" id="s2"></label>
+			<input type="radio" name="slide" class="control" id="Slide3" />
+			<label for="Slide3" id="s3"></label>
+			<input type="radio" name="slide" class="control" id="Slide4" />
+			<label for="Slide4" id="s4"></label>
+			<div class="overflow-wrapper">
+				<span class="slide" href=""><img src="./img/1.jpg" /></span>
+				<span class="slide" href=""><img src="./img/2.jpg" /></span>
+				<span class="slide" href=""><img src="./img/3.jpg" /></span>
+				<span class="slide" href=""><img src="./img/1.jpg" /></span>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>Demo UI Assignment</p>
+	</footer>
 
-<div class="popup">
-    
-    <div class="popup-content">
-        <img src="./img/cross.svg" id=closePopup width=25px>
-        <img id="cat-logo" src="https://cd-static-001.s3.amazonaws.com/sitespecific/in/coupon-categories/fd002aa03f01a72f938ddcb5ad9fcea5/cover-1140x355.jpg?748246" height=60px style="margin:25px 25px"/>
-        <div style="text-align:center"><span>CATEGORY</span> <span id="cat-header">CAPITAK& FOOTWERA</span> <span id="cat-desc"> There are jdlaskjd msdsdsd nahdskjahd ah ajkshd kahsd jshdk jahds jhdakjshdka d kjshdk 6  jslda 8jkhk jsdha kjhjhsd ka djsdh  adsdjahdk.</span></div>
-        <input type="button" class="view-all-offers" value="VIEW ALL OFFERS" />
-        
-    </div>
-</div>
+	<div class="popup">
+
+		<div class="popup-content">
+			<img src="./img/cross.svg" id=closePopup width=25px>
+			<img id="cat-logo" src="https://cd-static-001.s3.amazonaws.com/sitespecific/in/coupon-categories/fd002aa03f01a72f938ddcb5ad9fcea5/cover-1140x355.jpg?748246"
+			  height=60px style="margin:25px 25px" />
+			<div style="text-align:center">
+				<span>CATEGORY</span>
+				<span id="cat-header"></span>
+				<span id="cat-desc"></span>
+			</div>
+			<input type="button" class="view-all-offers" value="VIEW ALL OFFERS" />
+
+		</div>
+	</div>
 </body>
+
 </html>
