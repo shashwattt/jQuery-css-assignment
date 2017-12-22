@@ -470,7 +470,7 @@ footer {
 .popular-box-details{
     color:black; 
     text-align:left;
-    padding:12px 12px;
+    padding:10px 12px;
     border-top-style: dashed;
     border-top-width: 1px;
     border-top-color: rgba(0, 0, 0, 0.3)
@@ -485,7 +485,7 @@ footer {
     font-size: .7em; 
     font-weight:300; 
     display:block; 
-    margin:5px 0
+    margin:4px 0
 }
 @media (max-width: 600px) {
     .row {
