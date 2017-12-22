@@ -3,11 +3,12 @@
 A static un responsive website made made for learning and testing.
 
 ## Features
-- [x] jQuery 5
+- [x] jQuery
 - [x] HTML 5
 - [x] CSS3
 
 ## TODO
-- [ ] Responsive
-- [ ] Karma Mocha Test
+- [ ] Media Queries
+- [ ] Karma, Mochan - Test
+- [ ] Build Tools
 
