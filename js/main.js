@@ -29,8 +29,9 @@ $(document).ready(function () {
                         element.subCategories.forEach(item =>{
                             let li = $('<li>').html(item.name);
                             // li.bindclick(showPopupView(element));
+                            item.logo = element['0'].image_url;
                             li.on("click",function(){
-                                showPopupView(element);
+                                showPopupView(item, 'SUB ');
                             });
                             ul.append(li);
                         })
@@ -47,10 +48,23 @@ $(document).ready(function () {
         }
     });
 
-    function showPopupView(data){
-        $('#cat-logo').attr({"src":data['0'].image_url});
-        $('#cat-header').html(data['0'].name.toUpperCase());
-        let text = 'There are ' + data.subCategories.length+' sub-categories and '+data['0'].offer_count+' offers available for '+data['0'].name;
+    function showPopupView(data, subcat){
+        let text = '';
+        let logo = $('#cat-logo');
+        let header = $('#cat-header');
+        let type = $('#cat-type');
+        let catText = 'CATEGORY';
+        if(subcat){
+            logo.attr({"src":data.logo});
+            header.html(data.name.toUpperCase());
+            text = 'There are ' + data.offer_count+' offers available for '+data.name;
+            type.html('SUB ' + catText)
+        }else{
+            logo.attr({"src":data['0'].image_url});
+            header.html(data['0'].name.toUpperCase());
+            text = 'There are ' + data.subCategories.length+' sub-categories and '+data['0'].offer_count+' offers available for '+data['0'].name;
+            type.html(catText)
+        }
         $('#cat-desc').html(text)
         $('.popup').fadeIn(250);
     }

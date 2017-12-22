@@ -5,7 +5,7 @@
 	<title>UI Demo</title>
 	<script src="./js/jquery-3.2.1.min.js"></script>
 	<script src="./js/main.js"></script>
-	<link rel="stylesheet" href="./css/main.min.css"></link>
+	<link rel="stylesheet" href="./css/main.css"></link>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -46,28 +46,92 @@
 		</h5>
 	</div>
 	<div class="grid-container">
-		<div class="grid-item" style="background: url(./img/paytm.jpg)">
+		<div class="grid-item">
+			<div style="background: url(./img/paytm.jpg)"></div>
+			<div class="popular-box-details">
+				<span class="small-span">Paytm</span>
+				<span class="large-span">7 Offers</span>
+				<span class="small-span">flat 21 cashback</span>
+			</div>
+			<div class="hexagon"></div>
+			<div class="hexagon" id="hexagon-over"><span class="small-span">Earn 4.9 %</span></div>
 			<input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
 		</div>
-		<div class="grid-item" style="background: url(./img/amazon.jpg)">
+		<div class="grid-item">
+			<div style="background: url(./img/amazon.jpg)"></div>
+			<div class="popular-box-details">
+				<span class="small-span">Amazon</span>
+				<span class="large-span">6 Offers</span>
+				<span class="small-span">flat 21 cashback</span>
+			</div>
+			<div class="hexagon"></div>
+			<div class="hexagon" id="hexagon-over"><span class="small-span">Earn 4.88 %</span></div>
 			<input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
 		</div>
-		<div class="grid-item" style="background: url(./img/flipkart.jpg)">
+		<div class="grid-item">
+			<div style="background: url(./img/flipkart.jpg)"></div>
+			<div class="popular-box-details">
+				<span class="small-span">Flipkart</span>
+				<span class="large-span">6 Offers</span>
+				<span class="small-span">flat 21 cashback</span>
+			</div>
+			<div class="hexagon"></div>
+			<div class="hexagon" id="hexagon-over"><span class="small-span">Earn 4.88 %</span></div>
 			<input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
 		</div>
-		<div class="grid-item" style="background: url(./img/jabong.jpg)">
+		<div class="grid-item">
+			<div style="background: url(./img/jabong.jpg)"></div>
+			<div class="popular-box-details">
+				<span class="small-span">Jabong</span>
+				<span class="large-span">6 Offers</span>
+				<span class="small-span">flat 21 cashback</span>
+			</div>
+			<div class="hexagon"></div>
+			<div class="hexagon" id="hexagon-over"><span class="small-span">Earn 4.88 %</span></div>
 			<input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
 		</div>
-		<div class="grid-item" style="background: url(./img/mobi.jpg)">
+		<div class="grid-item">
+			<div style="background: url(./img/mobi.jpg)"></div>
+			<div class="popular-box-details">
+				<span class="small-span">Mobikwik</span>
+				<span class="large-span">6 Offers</span>
+				<span class="small-span">flat 21 cashback</span>
+			</div>
+			<div class="hexagon"></div>
+			<div class="hexagon" id="hexagon-over"><span class="small-span">Earn 4.58 %</span></div>
 			<input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
 		</div>
-		<div class="grid-item" style="background: url(./img/shopclues.jpg)">
+		<div class="grid-item">
+			<div style="background: url(./img/shopclues.jpg)"></div>
+			<div class="popular-box-details">
+				<span class="small-span">Shopclues</span>
+				<span class="large-span">6 Offers</span>
+				<span class="small-span">flat 21 cashback</span>
+			</div>
+			<div class="hexagon"></div>
+			<div class="hexagon" id="hexagon-over"><span class="small-span">Earn 4.8 %</span></div>
 			<input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
 		</div>
-		<div class="grid-item" style="background: url(./img/snapdeal.png)">
+		<div class="grid-item">
+			<div style="background: url(./img/snapdeal.png)"></div>
+			<div class="popular-box-details">
+				<span class="small-span">Snapdeal</span>
+				<span class="large-span">6 Offers</span>
+				<span class="small-span">flat 21 cashback</span>
+			</div>
+			<div class="hexagon"></div>
+			<div class="hexagon" id="hexagon-over"><span class="small-span">Earn 4.67 %</span></div>
 			<input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
 		</div>
-		<div class="grid-item" style="background: url(./img/vista.jpg)">
+		<div class="grid-item">
+			<div style="background: url(./img/vista.jpg)"></div>
+			<div class="popular-box-details">
+				<span class="small-span">Vista</span>
+				<span class="large-span">6 Offers</span>
+				<span class="small-span">flat 21 cashback</span>
+			</div>
+			<div class="hexagon"></div>
+			<div class="hexagon" id="hexagon-over"><span class="small-span">Earn 4.88 %</span></div>
 			<input type="button" class="view-all-offers poular-item-button" value="EXPLORE DEALS" />
 		</div>
 	</div>
@@ -101,7 +165,7 @@
 			<img id="cat-logo" src="https://cd-static-001.s3.amazonaws.com/sitespecific/in/coupon-categories/fd002aa03f01a72f938ddcb5ad9fcea5/cover-1140x355.jpg?748246"
 			  height=60px style="margin:25px 25px" />
 			<div style="text-align:center">
-				<span>CATEGORY</span>
+				<span id="cat-type"></span>
 				<span id="cat-header"></span>
 				<span id="cat-desc"></span>
 			</div>
